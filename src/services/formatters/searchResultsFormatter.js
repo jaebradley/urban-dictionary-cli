@@ -36,5 +36,13 @@ const formatSearchResults = results => (
   results.map(result => formatSearchResult(result))
 );
 
-export { formatThumbsUpPercentage, formatSearchResult, formatSearchResults };
+export {
+  formatThumbsUpPercentage,
+  formatWord,
+  formatDefinition,
+  formatThumbsUpCount,
+  formatThumbsDownCount,
+  formatSearchResult,
+  formatSearchResults,
+};
 
