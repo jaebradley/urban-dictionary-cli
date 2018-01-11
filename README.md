@@ -4,6 +4,8 @@
 
 # urban-dictionary-cli
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/jaebradley/urban-dictionary-cli.svg)](https://greenkeeper.io/)
+
 Search [Urban Dictionary](https://www.urbandictionary.com) without having to leave the command line
 
 ![alt-text](https://imgur.com/y2PmJCL.png)
