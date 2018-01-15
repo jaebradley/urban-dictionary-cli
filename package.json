@@ -14,7 +14,7 @@
     "test": "jest --coverage --passWithNoTests",
     "prepublishOnly": "npm run compile",
     "semantic-commit": "commit",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
