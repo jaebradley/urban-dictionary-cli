@@ -11,7 +11,7 @@
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "compile": "babel -d build/ src/ --ignore node_modules,*.test.js",
     "lint": "eslint --ext .js .",
-    "test": "jest --coverage",
+    "test": "jest --coverage --passWithNoTests",
     "prepublishOnly": "npm run compile",
     "semantic-commit": "commit",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
@@ -49,7 +49,7 @@
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
     "husky": "^0.14.3",
-    "jest": "^22.0.6",
+    "jest": "^22.1.1",
     "semantic-release": "^11.0.2"
   },
   "dependencies": {
