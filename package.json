@@ -37,7 +37,7 @@
     "@commitlint/cli": "^6.0.2",
     "@commitlint/config-angular": "^6.0.2",
     "@commitlint/prompt": "^6.0.2",
-    "@commitlint/prompt-cli": "^5.1.2",
+    "@commitlint/prompt-cli": "^6.0.2",
     "babel-cli": "^6.26.0",
     "babel-plugin-transform-async-to-generator": "^6.24.1",
     "babel-preset-es2015": "^6.24.1",
