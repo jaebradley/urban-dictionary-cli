@@ -9,7 +9,7 @@
   "scripts": {
     "codecov": "codecov",
     "commitmsg": "commitlint -e $GIT_PARAMS",
-    "compile": "babel src/ -d build/ --delete-dir-on-start --copy-files",
+    "compile": "babel src/ -d build/ --delete-dir-on-start",
     "compile:prod": "BABEL_ENV=production npm run compile",
     "lint": "eslint --ext .js .",
     "test": "jest --coverage --passWithNoTests",
@@ -57,6 +57,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.0.0-beta.47",
+    "axios": "^0.18.0",
     "chalk": "^2.3.0",
     "commander": "^2.12.1",
     "inquirer": "^5.0.1",
