@@ -1,6 +1,6 @@
 import inquirer from 'inquirer';
 import InquirerAutocompletePrompt from 'inquirer-autocomplete-prompt';
-import UrbanDictionaryClient from 'urban-dictionary-client';
+import { search as urbanDictionarySearch } from 'urban-dictionary-client';
 
 import { formatSearchResults } from '../formatters/searchResultsFormatter';
 
@@ -10,9 +10,8 @@ const search = async (input) => {
   if (!input) {
     return [];
   }
-  const response = await UrbanDictionaryClient.search(input);
-  const results = response.data.list;
-  return formatSearchResults(results);
+  const { list } = await urbanDictionarySearch(input);
+  return formatSearchResults(list);
 };
 
 const promptSearchTerm = async () => (
