@@ -12,7 +12,7 @@
     "compile": "babel src/ -d build/ --delete-dir-on-start",
     "compile:prod": "BABEL_ENV=production npm run compile",
     "lint": "eslint --ext .js .",
-    "test": "jest --coverage --passWithNoTests",
+    "test": "jest",
     "prepublishOnly": "npm run compile:prod",
     "semantic-commit": "commit",
     "semantic-release": "semantic-release",
@@ -33,7 +33,8 @@
   },
   "homepage": "https://github.com/jaebradley/urban-dictionary-cli#readme",
   "jest": {
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "collectCoverage": true
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.49",
@@ -45,6 +46,8 @@
     "@commitlint/config-angular": "^6.0.2",
     "@commitlint/prompt": "^6.0.2",
     "@commitlint/prompt-cli": "^6.0.2",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.0.1",
     "babel-preset-minify": "^0.4.2",
     "codecov": "^3.0.2",
     "eslint": "^4.12.0",
