@@ -62,7 +62,7 @@
     "@babel/runtime": "^7.0.0-beta.47",
     "chalk": "^2.3.0",
     "commander": "^2.12.1",
-    "inquirer": "^5.0.1",
+    "inquirer": "^6.0.0",
     "inquirer-autocomplete-prompt": "^0.12.0",
     "urban-dictionary-client": "^3.0.0"
   }
