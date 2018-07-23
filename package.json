@@ -63,7 +63,7 @@
     "chalk": "^2.3.0",
     "commander": "^2.12.1",
     "inquirer": "^6.0.0",
-    "inquirer-autocomplete-prompt": "^0.12.0",
+    "inquirer-autocomplete-prompt": "^1.0.0",
     "urban-dictionary-client": "^3.0.0"
   }
 }
