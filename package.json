@@ -7,16 +7,16 @@
     "udict": "build/executables/udict.js"
   },
   "scripts": {
-    "codecov": "codecov",
-    "commitmsg": "commitlint -e $GIT_PARAMS",
-    "compile": "babel src/ -d build/ --delete-dir-on-start",
+    "codecov": "npx codecov",
+    "commitmsg": "npx commitlint -e $GIT_PARAMS",
+    "compile": "npx babel src/ -d build/ --delete-dir-on-start",
     "compile:prod": "BABEL_ENV=production npm run compile",
-    "lint": "eslint --ext .js .",
-    "test": "jest",
+    "lint": "npx eslint --ext .js .",
+    "test": "npx jest",
     "prepublishOnly": "npm run compile:prod",
-    "semantic-commit": "commit",
-    "semantic-release": "semantic-release",
-    "travis-deploy-once": "travis-deploy-once"
+    "semantic-commit": "npx commit",
+    "semantic-release": "npx semantic-release",
+    "travis-deploy-once": "npx travis-deploy-once"
   },
   "repository": {
     "type": "git",
@@ -32,38 +32,33 @@
     "url": "https://github.com/jaebradley/urban-dictionary-cli/issues"
   },
   "homepage": "https://github.com/jaebradley/urban-dictionary-cli#readme",
-  "jest": {
-    "testEnvironment": "node",
-    "collectCoverage": true
-  },
   "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.49",
-    "@babel/core": "^7.0.0-beta.49",
-    "@babel/plugin-transform-async-to-generator": "^7.0.0-beta.49",
-    "@babel/plugin-transform-runtime": "^7.0.0-beta.49",
-    "@babel/preset-env": "^7.0.0-beta.49",
-    "@commitlint/cli": "^7.0.0",
-    "@commitlint/config-angular": "^7.0.1",
-    "@commitlint/prompt": "^7.0.0",
-    "@commitlint/prompt-cli": "^7.0.0",
-    "babel-core": "^7.0.0-bridge.0",
-    "babel-jest": "^23.0.1",
-    "babel-preset-minify": "^0.4.2",
-    "codecov": "^3.0.2",
-    "eslint": "^5.0.0",
-    "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.8.0",
-    "husky": "^0.14.3",
-    "jest": "^22.1.1",
-    "semantic-release": "^15.0.0",
-    "travis-deploy-once": "^5.0.0"
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-transform-async-to-generator": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-angular": "^8.3.4",
+    "@commitlint/prompt": "^8.3.5",
+    "@commitlint/prompt-cli": "^8.3.5",
+    "babel-jest": "^25.1.0",
+    "babel-preset-minify": "^0.5.1",
+    "codecov": "^3.6.5",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1",
+    "husky": "^4.2.3",
+    "jest": "^25.1.0",
+    "semantic-release": "^17.0.3",
+    "travis-deploy-once": "^5.0.11"
   },
   "dependencies": {
-    "@babel/runtime": "^7.0.0-beta.47",
-    "chalk": "^2.3.0",
-    "commander": "^2.12.1",
-    "inquirer": "^6.0.0",
-    "inquirer-autocomplete-prompt": "^1.0.0",
-    "urban-dictionary-client": "^3.0.0"
+    "@babel/runtime": "^7.8.4",
+    "chalk": "^3.0.0",
+    "commander": "^4.1.1",
+    "inquirer": "^6.5.2",
+    "inquirer-autocomplete-prompt": "^1.0.2",
+    "urban-dictionary-client": "^3.0.1"
   }
 }
