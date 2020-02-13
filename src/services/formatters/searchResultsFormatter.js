@@ -4,19 +4,19 @@ const formatThumbsUpPercentage = ({ thumbsUp, thumbsDown }) => (
   chalk.italic(`${Math.round((thumbsUp / (thumbsUp + thumbsDown)) * 100)}%`)
 );
 
-const formatWord = word => (
+const formatWord = (word) => (
   chalk.yellow.underline.bold(word)
 );
 
-const formatDefinition = definition => (
+const formatDefinition = (definition) => (
   chalk.magentaBright.bold(definition.replace(/\r?\n?/g, '').trim())
 );
 
-const formatThumbsUpCount = count => (
+const formatThumbsUpCount = (count) => (
   chalk.green(count)
 );
 
-const formatThumbsDownCount = count => (
+const formatThumbsDownCount = (count) => (
   chalk.red(count)
 );
 
@@ -32,8 +32,8 @@ const formatSearchResult = (result) => {
   return `${formattedThumbsUpCount} 👍  ${formattedThumbsDownCount} 👎  (${formattedPercentage})  ${formattedWord}: ${formattedDefinition}`;
 };
 
-const formatSearchResults = results => (
-  results.map(result => formatSearchResult(result))
+const formatSearchResults = (results) => (
+  results.map((result) => formatSearchResult(result))
 );
 
 export {
@@ -45,4 +45,3 @@ export {
   formatSearchResult,
   formatSearchResults,
 };
-
