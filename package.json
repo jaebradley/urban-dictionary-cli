@@ -56,7 +56,7 @@
   "dependencies": {
     "@babel/runtime": "^7.8.4",
     "chalk": "^3.0.0",
-    "commander": "^4.1.1",
+    "commander": "^5.0.0",
     "inquirer": "^7.0.5",
     "inquirer-autocomplete-prompt": "^1.0.2",
     "urban-dictionary-client": "^3.0.1"
