@@ -34,10 +34,10 @@
   "homepage": "https://github.com/jaebradley/urban-dictionary-cli#readme",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.8.4",
+    "@babel/core": "^7.9.6",
     "@babel/plugin-transform-async-to-generator": "^7.8.3",
-    "@babel/plugin-transform-runtime": "^7.8.3",
-    "@babel/preset-env": "^7.8.4",
+    "@babel/plugin-transform-runtime": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-angular": "^8.3.4",
     "@commitlint/prompt": "^8.3.5",
@@ -54,7 +54,7 @@
     "travis-deploy-once": "^5.0.11"
   },
   "dependencies": {
-    "@babel/runtime": "^7.8.4",
+    "@babel/runtime": "^7.9.6",
     "chalk": "^4.0.0",
     "commander": "^5.0.0",
     "inquirer": "^7.0.5",
