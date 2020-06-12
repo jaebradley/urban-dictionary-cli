@@ -1,5 +1,6 @@
 # urban-dictionary-cli
 
+![Urban Dictionary CLI](https://github.com/jaebradley/urban-dictionary-cli/workflows/Urban%20Dictionary%20CLI/badge.svg)
 [![npm](https://img.shields.io/npm/dt/urban-dictionary-cli.svg)](https://www.npmjs.com/package/urban-dictionary-cli)
 [![npm](https://img.shields.io/npm/v/urban-dictionary-cli.svg)](https://www.npmjs.com/package/urban-dictionary-cli)
 
