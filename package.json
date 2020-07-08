@@ -54,7 +54,7 @@
     "travis-deploy-once": "^5.0.11"
   },
   "dependencies": {
-    "@babel/runtime": "^7.10.0",
+    "@babel/runtime": "^7.10.2",
     "chalk": "^4.1.0",
     "inquirer": "^7.2.0",
     "commander": "^5.1.0",
