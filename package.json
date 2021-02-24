@@ -52,7 +52,7 @@
     "semantic-release": "^17.3.0"
   },
   "dependencies": {
-    "@babel/runtime": "^7.12.5",
+    "@babel/runtime": "^7.12.13",
     "chalk": "^4.1.0",
     "inquirer": "^7.3.3",
     "commander": "^7.0.0-2",
